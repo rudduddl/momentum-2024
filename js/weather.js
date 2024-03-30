@@ -1,4 +1,7 @@
-const API_KEY = "7c640269bdc92b4aa3077c41973bd966";
+// .env 파일을 로드합니다.
+require("dotenv").config();
+
+const API_KEY = process.env.API_KEY;
 
 function onGeoSucess(position) {
   const lat = position.coords.latitude;
