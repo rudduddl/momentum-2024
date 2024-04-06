@@ -1,4 +1,6 @@
-const API_KEY = 
+require("dotenv").config();
+
+const API_KEY = process.env.API_KEY;
 
 function onGeoSucess(position) {
   const lat = position.coords.latitude;
